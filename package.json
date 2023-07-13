@@ -1,0 +1,26 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+		"build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"google-spreadsheet": "^4.0.2",
+		"googleapis": "^122.0.0",
+		"method-override": "^3.0.0",
+		"netlify-lambda": "^2.0.16",
+		"serverless-http": "^3.2.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
+}
